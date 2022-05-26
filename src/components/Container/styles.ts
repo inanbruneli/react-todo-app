@@ -30,8 +30,14 @@ export const Main = styled.main<MainProps>`
     height: 70vh;
     padding: 0;
     transform: translateX(-50%);
-    width: 650px;
-    
+
+    @media (max-width: 1080px){
+      width: 40.62rem;
+    }
+
+    @media (max-width: 720px){
+      width: 25rem;
+    }
 
     .title {
       width: 100%;
@@ -74,7 +80,15 @@ export const Main = styled.main<MainProps>`
     }
 
     .item-foot div {
-      width: 33%;      
+         
+
+      @media (max-width: 1080px){
+        width: 33%;   
+      }
+
+      @media (max-width: 720px){
+        width: 40%;   
+      }
     }
 
     .text-right{
@@ -97,8 +111,16 @@ export const Main = styled.main<MainProps>`
     }
 
     .foot-center {
-      display: flex;
+      
       justify-content: space-between;
+
+      @media (max-width: 1080px){
+        display: flex;
+      }
+
+      @media (max-width: 720px){
+        display: none;
+      }
     }
 
 
