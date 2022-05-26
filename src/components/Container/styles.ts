@@ -30,10 +30,7 @@ export const Main = styled.main<MainProps>`
     height: 70vh;
     padding: 0;
     transform: translateX(-50%);
-
-    @media (max-width: 1080px){
-      width: 40.62rem;
-    }
+    width: 40.62rem;
 
     @media (max-width: 720px){
       width: 25rem;
@@ -79,13 +76,9 @@ export const Main = styled.main<MainProps>`
       height: 6vh;
     }
 
-    .item-foot div {
-         
-
-      @media (max-width: 1080px){
-        width: 33%;   
-      }
-
+    .item-foot div {    
+      width: 33%;   
+      
       @media (max-width: 720px){
         width: 40%;   
       }
@@ -110,13 +103,9 @@ export const Main = styled.main<MainProps>`
       color: var(--BrightBlue);
     }
 
-    .foot-center {
-      
+    .foot-center {      
       justify-content: space-between;
-
-      @media (max-width: 1080px){
-        display: flex;
-      }
+      display: flex;      
 
       @media (max-width: 720px){
         display: none;
